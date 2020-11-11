@@ -61,7 +61,7 @@ int main(void)
     adcStart(&ADCD1, nullptr);
 
     chThdCreateStatic(waThread1, sizeof(waThread1), NORMALPRIO, Thread1, NULL);
-    chThdCreateStatic(waThread2, sizeof(waThread2), NORMALPRIO + 5, Thread2, NULL);
+    chThdCreateStatic(waThread2, sizeof(waThread2), NORMALPRIO, Thread2, NULL);
 
     while (true)
     {
